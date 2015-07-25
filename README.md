@@ -1,5 +1,5 @@
 
-**Udacity Front-End Web Developer Project 6 JavaScript Testing with Jasmine
+<strong>Udacity Front-End Web Developer Project 6 JavaScript Testing with Jasmine</strong>
 
 http://tobyho.com/2011/12/15/jasmine-spy-cheatsheet/
 
