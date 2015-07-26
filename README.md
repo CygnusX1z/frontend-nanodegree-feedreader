@@ -17,6 +17,11 @@ The application is used to test JavaScript using the Jasmine framework. We are t
 *   **New Feed Selection**
     *   changes after load
 
+## Steps taken 
+* Load page
+* Click on menu icon to unhide then click again hide menu
+* Click on a menu option to change the feed
+
 ## References Used:
 
 *   [Jasmine 2.1 Documentation](http://jasmine.github.io/2.1/introduction.html)
