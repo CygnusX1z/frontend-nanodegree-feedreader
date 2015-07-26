@@ -78,7 +78,7 @@ $(function() {
          * that the content actually changes.
          */
         beforeEach(function(done) {
-            title = $('h2').text();
+            var title = $('h2').text();
             loadFeed(1, done);
         });
 
