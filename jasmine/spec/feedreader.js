@@ -75,22 +75,22 @@ $(function() {
     /* Test "New Feed Selection" */
     describe('New Feed Selection', function() {
         /* Test to ensure when a new feed is loaded by the loadFeed function
-         * that the content actually changes.
-         */
+         * that the content actually changes. */    	
         beforeEach(function(done) {
             var title = $('h2').text();
             loadFeed(1, done);
         });
-
+        
         // Feed changes after a new selection is made
         it('changes after load', function(done) {
-            newTitle = $('h2').text();
+            var newTitle = $('h2').text();
             expect(newTitle).toBeDefined();
             expect(newTitle).not.toBe("");
             expect(newTitle).not.toBe(title);
             done();
+            //console.log(newTitle);
         });
-
+        
         afterEach(function(done) {
             loadFeed(0, done);
         });
