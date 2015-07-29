@@ -37,6 +37,7 @@ $(function() {
             // check that the body has class='menu-hidden' at start
             expect($('body').hasClass('menu-hidden')).toBe(true);
         });
+        
         // Ensure menu displays when menu icon is clicked
         // assign the .menu-icon-link class to a variable for easier access
         var menuAnchor = $('.menu-icon-link');
@@ -75,9 +76,10 @@ $(function() {
     /* Test "New Feed Selection" */
     describe('New Feed Selection', function() {
         /* Test to ensure when a new feed is loaded by the loadFeed function
-         * that the content actually changes. */    	
+         * that the content actually changes. */  
+    	var title;
         beforeEach(function(done) {
-            var title = $('h2').text();
+            title = $('h2').text();
             loadFeed(1, done);
         });
         
@@ -88,7 +90,6 @@ $(function() {
             expect(newTitle).not.toBe("");
             expect(newTitle).not.toBe(title);
             done();
-            //console.log(newTitle);
         });
         
         afterEach(function(done) {
